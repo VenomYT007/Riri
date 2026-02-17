@@ -173,7 +173,9 @@ Happy 19th birthday, princess Riri. May this year bring you growth, gentle momen
   
   finalBtn.addEventListener("click", () => {
     letterSection.style.opacity = "0";
-    
+
+    music.volume = 0.3;
+
     setTimeout(() => {
       darkOverlay.classList.add("active");
     }, 1000);
@@ -232,3 +234,4 @@ Happy 19th birthday, princess Riri. May this year bring you growth, gentle momen
 }
 
 });
+

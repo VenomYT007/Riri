@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Riri's Special Page</title>
+
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+
+<div class="stars"></div>
+<div class="stars2"></div>
+<div class="aurora"></div>
+
+<audio id="bgMusic" preload="auto" loop>
+  <source src="snowfall.mp3" type="audio/mpeg">
+</audio>
+
+<div class="landing" id="landing">
+  <h1>Maybe I can't give you a hug or any gift on this day, but here's something across the pixels...</h1>
+  <button id="startBtn">Check it out!</button>
+</div>
+
+<section id="birthdaySection" class="birthday hidden">
+  <div class="light-veil"></div>
+
+  <div class="birthday-content">
+    <p class="birthday-line line-1">
+      The world became softer the day you were born.
+    </p>
+
+    <p class="birthday-line line-2">
+      You may not be a significant part of my life for a long time,
+      but you are truly one of the most important person to me.
+    </p>
+
+    <p class="birthday-line line-3">
+      Thank you for being born, and thank you for being you.
+      I hope you have a wonderful birthday filled with love and joy.
+    </p>
+
+    <button id="nextBtn" class="next-btn hidden-btn">
+      One more thing...
+    </button>
+  </div>
+</section>
+
+<section id="letterSection" class="letter hidden">
+  <div class="letter-box">
+    <p id="typedText"></p>
+
+    <button id="finalBtn" class="next-btn hidden-btn">Bbyeee ♡</button>
+  </div>
+</section>
+
+<div class="music-toggle">
+<button id="musicToggle" class="music-btn">
+  <svg id="musicIcon" width="22" height="22" viewBox="0 0 24 24" fill="white">
+    <path d="M9 3v12.26A3 3 0 1 0 11 18V7h6V3H9z"/>
+  </svg>
+  <svg id="muteIcon" width="22" height="22" viewBox="0 0 24 24" fill="white" style="display:none;">
+  <path d="M9 3v12.26A3 3 0 1 0 11 18V7h6V3H9z"/>
+  <line x1="3" y1="21" x2="21" y2="3"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+</button>
+</div>
+
+<div id="darkOverlay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
